@@ -4,6 +4,7 @@ from core.utils.admin import auto_register
 from django.contrib import admin
 
 
+
 class ItemAdmin(admin.ModelAdmin):
     list_display = ('user', 'image', 'source_url', 'message')
     list_editable = ('source_url', 'message')

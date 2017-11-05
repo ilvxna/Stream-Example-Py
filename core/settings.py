@@ -30,7 +30,7 @@ CACHES = {
 }
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 
 COMPRESS_OFFLINE = True
@@ -122,6 +122,12 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 DATABASES = {'default':dj_database_url.config()}
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'testdatabase.sqlite',
+    }
+}
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
@@ -195,5 +201,5 @@ SOCIALACCOUNT_EMAIL_REQUIRED = False
 SOCIALACCOUNT_EMAIL_VERIFICATION = False
 
 # if you run on Heroku you don't need to set this
-STREAM_API_KEY = ''
-STREAM_API_SECRET = ''
+STREAM_API_KEY = 'pknesgwr4b2a'
+STREAM_API_SECRET = 'mshfyvqnbvngxhw3dhhcgrtfae4xc4849urxv5kmq3rebgg8r44hv5kwajzs2ntv'

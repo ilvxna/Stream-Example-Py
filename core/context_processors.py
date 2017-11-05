@@ -1,6 +1,5 @@
 from stream_django import feed_manager
 
-
 def user_feeds(request):
     context = {}
     if request.user.is_authenticated():

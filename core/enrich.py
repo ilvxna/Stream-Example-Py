@@ -23,6 +23,7 @@ def do_i_follow(user, follows):
     do_i_follow_users(user, [f.target for f in follows])
 
 
+
 class Enrich(BaseEnrich):
 
     def __init__(self, current_user, *args, **kwargs):
